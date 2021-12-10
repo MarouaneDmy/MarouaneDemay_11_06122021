@@ -1,0 +1,14 @@
+/* Couleur */
+html {
+  margin-left: 5%;
+  margin-right: 5%;
+  --line-h: 14px;
+  --nth-lines-trunc: 6;
+}
+
+header {
+  display: flex;
+  height: 180px;
+}
+
+/*# sourceMappingURL=index.css.map */

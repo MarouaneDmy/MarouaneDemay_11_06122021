@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    height: 150px;
+    @media only screen and (max-width: 600px){
+        height: 100px;
+    }
+}
+
+.logo {
+    width: auto;
+    height: 68px;
+    margin-top: 5px;
+    @media only screen and (max-width: 600px){
+        height: 40px;
+    }
+}
+
+.navigation {
+    display: flex;
+    position: absolute;
+    right: 5.5%;
+    top: 30px;
+    list-style-type: none; 
+    @media only screen and (max-width: 600px){
+        top: 32px;
+        right: 7%;
+    }
+    li {
+        font-family: 'montserrat-medium', sans-serif;
+        font-size: 24px;
+        margin-left: 50px;
+        @media only screen and (max-width: 600px){
+            font-size: 12px;
+            margin-left: 15px;
+            text-transform: uppercase;
+        }
+        a {
+            text-decoration: none;
+            color: $color-primary;
+        }
+        .active {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,115 @@
+/* Couleur */
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("./polices/Montserrat-Regular.woff2") format("woff2"), url("./polices/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("./polices/Montserrat-Medium.woff2") format("woff2"), url("./polices/Montserrat-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "montserrat-medium", sans-serif;
+}
+
+html {
+  margin-left: 5%;
+  margin-right: 5%;
+  --line-h: 14px;
+  --nth-lines-trunc: 6;
+}
+
+header {
+  display: flex;
+  height: 150px;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    height: 100px;
+  }
+}
+
+.logo {
+  width: auto;
+  height: 68px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 40px;
+  }
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  right: 5.5%;
+  top: 30px;
+  list-style-type: none;
+}
+@media only screen and (max-width: 600px) {
+  .navigation {
+    top: 32px;
+    right: 7%;
+  }
+}
+.navigation li {
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 24px;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .navigation li {
+    font-size: 12px;
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+}
+.navigation li a {
+  text-decoration: none;
+  color: #FF6060;
+}
+.navigation li .active {
+  text-decoration: underline;
+}
+
+.banner {
+  display: flex;
+  height: 223px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background-banner.png");
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 111px;
+    justify-content: left;
+  }
+}
+.banner h1 {
+  font-size: 48px;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+  .banner h1 {
+    font-size: 24px;
+    margin-left: 15px;
+    white-space: pre-line;
+  }
+}
+.banner br {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .banner br {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,30 @@
+.banner {
+    display: flex;
+    height: 223px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background-banner.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    @media only screen and (max-width: 600px){
+        height: 111px;
+        justify-content: left;
+    }
+    h1 {
+        font-size: 48px;
+        color: $color-white;
+        @media only screen and (max-width: 600px){
+            font-size: 24px;
+            margin-left: 15px;
+            white-space: pre-line;
+        }
+    }
+    br {
+        display: none;
+        @media only screen and (max-width: 600px){
+            display: flex;
+        }
+    }
+    
+}

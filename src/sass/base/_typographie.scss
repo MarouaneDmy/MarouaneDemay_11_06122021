@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url('./polices/Montserrat-Regular.woff2') format('woff2'),
+         url('./polices/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat-medium';
+    src: url('./polices/Montserrat-Medium.woff2') format('woff2'),
+         url('./polices/Montserrat-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "montserrat-medium", sans-serif;
+}
