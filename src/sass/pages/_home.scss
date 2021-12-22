@@ -2,7 +2,6 @@
     display: flex;
     height: 223px;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background-banner.png");
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -14,10 +13,13 @@
     h1 {
         font-size: 48px;
         color: $color-white;
-        @media only screen and (max-width: 600px){
-            font-size: 24px;
+        font-family: "montserrat-regular";
+        @media only screen and (max-width: 1100px){
             margin-left: 15px;
-            white-space: pre-line;
+        }
+        @media only screen and (max-width: 600px){
+            width: 225px;
+            font-size: 24px;
         }
     }
     br {
@@ -27,4 +29,58 @@
         }
     }
     
+}
+
+.locationList {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    padding: 40px;
+    background-color: $color-secondary;
+    border-radius: 25px 25px 0px 0px;
+    @media only screen and (max-width: 1500px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 1100px){
+        background-color: $color-white;
+        padding: 0px;
+    }
+    @media only screen and (max-width: 800px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+    div {
+        @media only screen and (max-width: 600px){
+            width: 100%;
+        }
+    }
+}
+
+.locationCard {
+    display: flex;
+    align-items: flex-end;
+    width: 340px;
+    height: 340px;
+    margin: 40px;
+    margin-top: 0px;
+    border-radius: 10px;
+    @media only screen and (max-width: 1100px){
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 320px;
+        height: 255px;
+    }
+}
+
+.locationCardLink {
+    text-decoration: none;
+}
+
+.titleLocation {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 18px;
 }

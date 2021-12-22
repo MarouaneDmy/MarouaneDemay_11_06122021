@@ -13,6 +13,12 @@
 }
 h1 {
   font-family: "montserrat-medium", sans-serif;
+  color: #FF6060;
+}
+
+p {
+  font-family: "montserrat-medium", sans-serif;
+  color: #FF6060;
 }
 
 html {
@@ -22,9 +28,13 @@ html {
   --nth-lines-trunc: 6;
 }
 
+html, body {
+  height: 100%;
+}
+
 header {
   display: flex;
-  height: 150px;
+  height: 125px;
 }
 @media only screen and (max-width: 600px) {
   header {
@@ -76,11 +86,39 @@ header {
   text-decoration: underline;
 }
 
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 209px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.footer p {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 18px;
+  bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .footer p {
+    font-size: 12px;
+    bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .footer {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+}
+
 .banner {
   display: flex;
   height: 223px;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background-banner.png");
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
@@ -95,12 +133,17 @@ header {
 .banner h1 {
   font-size: 48px;
   color: #FFFFFF;
+  font-family: "montserrat-regular";
+}
+@media only screen and (max-width: 1100px) {
+  .banner h1 {
+    margin-left: 15px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .banner h1 {
+    width: 225px;
     font-size: 24px;
-    margin-left: 15px;
-    white-space: pre-line;
   }
 }
 .banner br {
@@ -109,6 +152,434 @@ header {
 @media only screen and (max-width: 600px) {
   .banner br {
     display: flex;
+  }
+}
+
+.locationList {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+  padding: 40px;
+  background-color: #F6F6F6;
+  border-radius: 25px 25px 0px 0px;
+}
+@media only screen and (max-width: 1500px) {
+  .locationList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .locationList {
+    background-color: #FFFFFF;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .locationList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .locationList div {
+    width: 100%;
+  }
+}
+
+.locationCard {
+  display: flex;
+  align-items: flex-end;
+  width: 340px;
+  height: 340px;
+  margin: 40px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1100px) {
+  .locationCard {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 320px;
+    height: 255px;
+  }
+}
+
+.locationCardLink {
+  text-decoration: none;
+}
+
+.titleLocation {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.carrousel {
+  position: relative;
+  height: 415px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .carrousel {
+    height: 255px;
+  }
+}
+
+.infoLocation {
+  position: relative;
+}
+.infoLocation h1 {
+  font-family: "montserrat-regular";
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1100px) {
+  .infoLocation h1 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .infoLocation h1 {
+    font-size: 18px;
+  }
+}
+.infoLocation .location {
+  margin: 0 auto;
+  font-size: 18px;
+}
+@media only screen and (max-width: 1100px) {
+  .infoLocation .location {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .infoLocation .location {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .infoLocation {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+}
+
+.host {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  top: 0px;
+}
+.host p {
+  display: flex;
+  font-family: "montserrat-medium";
+  font-size: 18px;
+  color: #FF6060;
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .host p {
+    font-size: 12px;
+    width: 50px;
+  }
+}
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .host img {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .host {
+    top: inherit;
+    bottom: 0px;
+    align-items: center;
+  }
+}
+
+.rating {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  top: 80px;
+}
+.rating .imgStar {
+  width: 20px;
+  margin: 3px;
+  height: auto;
+}
+@media only screen and (max-width: 1100px) {
+  .rating {
+    position: inherit;
+    top: inherit;
+    margin-top: 30px;
+  }
+}
+
+.tags {
+  display: flex;
+}
+.tags div {
+  display: flex;
+  min-width: 105px;
+  width: auto;
+  height: 25px;
+  background-color: #FF6060;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: "montserrat-regular";
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .tags div {
+    height: 18px;
+    font-size: 10px;
+    border-radius: 5px;
+    min-width: 84px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .tags {
+    width: 100%;
+  }
+}
+
+.next {
+  position: absolute;
+  right: 0px;
+  top: 40%;
+  right: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .next {
+    top: 45%;
+  }
+}
+
+.previous {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .previous {
+    top: 45%;
+  }
+}
+
+.fa-chevron-left {
+  font-size: 80px;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .fa-chevron-left {
+    font-size: 25px;
+  }
+}
+
+.arrow-next {
+  transform: rotate(180deg);
+}
+
+.dropdown-location {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1100px) {
+  .dropdown-location {
+    flex-wrap: wrap;
+  }
+}
+
+.dropdown {
+  width: 45%;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1100px) {
+  .dropdown {
+    width: 100%;
+  }
+}
+
+.dropdown summary {
+  display: flex;
+  position: relative;
+  height: 52px;
+  background-color: #FF6060;
+  border: solid #FF6060;
+  border-radius: 10px;
+  padding-left: 20px;
+  align-items: center;
+  font-size: 24px;
+  font-family: "montserrat-regular";
+  color: #FFFFFF;
+  list-style: none;
+}
+.dropdown summary .dropdown-arrow {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 32px;
+  transform: rotate(270deg);
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+  .dropdown summary .dropdown-arrow {
+    top: 6px;
+    right: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dropdown summary {
+    height: 30px;
+    font-size: 13px;
+  }
+}
+
+.dropdownList {
+  padding-left: 20px;
+}
+
+.dropdown-content {
+  display: flex;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  margin-top: -10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.dropdown-content li {
+  margin: 5px;
+  list-style-type: none;
+  font-size: 18px;
+  color: #FF6060;
+  font-family: "montserrat-regular";
+}
+@media only screen and (max-width: 600px) {
+  .dropdown-content li {
+    font-size: 12px;
+  }
+}
+.dropdown-content p {
+  font-size: 18px;
+  color: #FF6060;
+  font-family: "montserrat-regular";
+  margin-top: 0;
+  padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .dropdown-content p {
+    font-size: 12px;
+  }
+}
+
+.dropdown[open] .dropdown-arrow {
+  transform: rotate(90deg);
+}
+
+.dropdown-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.dropdown-about .dropdown {
+  width: 60%;
+}
+.dropdown-about .dropdown summary {
+  height: 47px;
+}
+@media only screen and (max-width: 600px) {
+  .dropdown-about .dropdown summary {
+    height: 30px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+}
+.dropdown-about .dropdown .dropdown-arrow {
+  top: 7px;
+}
+@media only screen and (max-width: 600px) {
+  .dropdown-about .dropdown .dropdown-arrow {
+    top: 6px;
+    right: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .dropdown-about .dropdown {
+    width: 100%;
+  }
+}
+.dropdown-about .dropdown-content p {
+  font-size: 24px;
+}
+@media only screen and (max-width: 600px) {
+  .dropdown-about .dropdown-content p {
+    font-size: 12px;
+  }
+}
+
+.error-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.error-content h1 {
+  font-size: 288px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+@media only screen and (max-width: 600px) {
+  .error-content h1 {
+    margin-top: 150px;
+    font-size: 96px;
+  }
+}
+.error-content p {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .error-content p {
+    font-size: 18px;
+  }
+}
+.error-content .lien-accueil {
+  font-family: "montserrat-medium";
+  font-size: 18px;
+  color: #FF6060;
+}
+@media only screen and (max-width: 600px) {
+  .error-content .lien-accueil {
+    font-size: 14px;
   }
 }
 

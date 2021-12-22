@@ -1,0 +1,246 @@
+.carrousel {
+    position: relative;
+    height: 415px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    @media only screen and (max-width: 600px){
+        height: 255px;
+    }
+}
+
+.infoLocation {
+    position: relative;
+    h1 {
+        font-family: 'montserrat-regular';
+        font-size: 36px;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 1100px){
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px){
+            font-size: 18px;
+        }
+    }
+    .location {
+        margin: 0 auto;
+        font-size: 18px;
+        @media only screen and (max-width: 1100px){
+            width: 100%;
+        }
+        @media only screen and (max-width: 600px){
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width: 1100px){
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+}
+
+.host {
+    position: absolute;
+    display: flex;
+    right: 0px;
+    top: 0px;
+    p {
+        display: flex;
+        font-family: 'montserrat-medium';
+        font-size: 18px;
+        color: $color-primary;
+        width: 100px;
+        margin-top: 10px;
+        margin-right: 10px;
+        text-align: right;
+        align-items: center;
+        @media only screen and (max-width: 600px){
+            font-size: 12px;
+            width: 50px;
+        }
+    }
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 100px;
+        @media only screen and (max-width: 600px){
+            width: 32px;
+            height: 32px;
+        }
+    }
+    @media only screen and (max-width: 1100px){
+        top: inherit;
+        bottom: 0px;
+        align-items: center;
+    }
+}
+
+.rating {
+    position: absolute;
+    display: flex;
+    right: 0px;
+    top: 80px;
+    .imgStar {
+        width: 20px;
+        margin: 3px;
+        height: auto;
+    }
+    @media only screen and (max-width: 1100px){
+        position: inherit;
+        top: inherit;
+        margin-top: 30px;
+    }
+}
+
+
+.tags {
+    display: flex;
+    div {
+        display: flex;
+        min-width: 105px;
+        width: auto;
+        height: 25px;
+        background-color: $color-primary;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: $color-white;
+        font-family: 'montserrat-regular';
+        margin-top: 10px;
+        margin-right: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        @media only screen and (max-width: 600px){
+            height: 18px;
+            font-size: 10px;
+            border-radius: 5px;
+            min-width: 84px;
+        }
+    } 
+    @media only screen and (max-width: 1100px){
+        width: 100%;
+    }
+}
+
+.next {
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    right: 20px;
+    @media only screen and (max-width: 600px){
+        top: 45%;
+    }
+}
+
+.previous {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    @media only screen and (max-width: 600px){
+        top: 45%;
+    }
+}
+
+.fa-chevron-left {
+    font-size: 80px;
+    color: white;
+    @media only screen and (max-width: 600px){
+        font-size: 25px;
+    }
+}
+
+.arrow-next {
+    transform: rotate(180deg)
+}
+
+.dropdown-location {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    @media only screen and (max-width: 1100px){
+        flex-wrap: wrap;
+    }
+}
+
+.dropdown {
+    width: 45%;
+    margin-bottom: 40px;
+    @media only screen and (max-width: 1100px){
+        width: 100%;
+    }
+}
+
+.dropdown summary {
+    // Concerne le bloc
+    display: flex;
+    position: relative;
+    height: 52px;
+    background-color: $color-primary;
+    border: solid $color-primary;
+    border-radius: 10px;
+    padding-left: 20px;
+    // Concerne le contenu écrit
+    align-items: center;
+    font-size: 24px;
+    font-family: 'montserrat-regular';
+    color: $color-white;
+    list-style: none;
+    .dropdown-arrow {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 32px;
+        transform: rotate(270deg);
+        color: $color-white;
+        @media only screen and (max-width: 600px){
+            top: 6px;
+            right: 10px;
+            font-size: 20px;
+        }
+    }  
+    @media only screen and (max-width: 600px){
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+.dropdownList {
+    padding-left: 20px;
+}
+
+.dropdown-content {
+    display: flex;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    margin-top: -10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    li {
+        margin: 5px;
+        list-style-type: none;
+        font-size: 18px;
+        color: $color-primary;
+        font-family: 'montserrat-regular';
+        @media only screen and (max-width: 600px){
+            font-size: 12px;
+        }
+    }
+    p {
+        font-size: 18px;
+        color: $color-primary;
+        font-family: 'montserrat-regular';
+        margin-top: 0;
+        padding: 20px;
+        @media only screen and (max-width: 600px){
+            font-size: 12px;
+        }
+    }
+}
+
+.dropdown[open] .dropdown-arrow {
+    transform: rotate(90deg);
+}
+
+
+

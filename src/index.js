@@ -6,7 +6,7 @@ import {
 import Home from './pages/home'
 import About from './pages/about'
 import Error from './pages/error'
-import Logement from './pages/logement'
+import Location from './pages/location'
 import Header from './components/header'
 
 ReactDOM.render(
@@ -19,7 +19,7 @@ ReactDOM.render(
         </Route>
         <Route path="/about" element={<About />}>
         </Route>
-        <Route path="/logement" element={<Logement />}>
+        <Route exact path="/location/:id" element={<Location />}>
         </Route>
         <Route path="*" element={<Error />}>
         </Route>
