@@ -1,8 +1,10 @@
 .footer {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     height: 209px;
+    width: 100%;
+    left: 0px;
     justify-content: center;
     align-items: center;
     background-color: black;

@@ -2,7 +2,10 @@ import React from 'react'
 
 export default class Carrousel extends React.Component {
 
-state = {index:0}
+state = {
+  index: 0
+}
+
 next=()=>{
   let newIndex = this.state.index + 1;
   if (newIndex > this.props.location.pictures.length - 1){

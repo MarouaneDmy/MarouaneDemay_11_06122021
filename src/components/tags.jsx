@@ -6,7 +6,7 @@ export default class Rating extends React.Component {
 
     return (
         <div className="tags">
-            {this.props.location.tags.map((tag) => <div>{tag}</div>)}
+            {this.props.location.tags.map((tag) => <div key={`tag_${tag}`} >{tag}</div>)}
         </div>
     )
   }

@@ -7,7 +7,7 @@ export default class Navigation extends React.Component {
       <nav>
         <ul className='navigation'>
           <li>
-            <NavLink exact to="/">
+            <NavLink to="/">
               Accueil
             </NavLink>
           </li>

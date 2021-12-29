@@ -8,6 +8,7 @@ import About from './pages/about'
 import Error from './pages/error'
 import Location from './pages/location'
 import Header from './components/header'
+import Footer from './components/footer'
 
 ReactDOM.render(
   
@@ -24,6 +25,7 @@ ReactDOM.render(
         <Route path="*" element={<Error />}>
         </Route>
       </Routes>
+      <Footer/>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

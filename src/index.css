@@ -87,10 +87,12 @@ header {
 }
 
 .footer {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   height: 209px;
+  width: 100%;
+  left: 0px;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -221,6 +223,7 @@ header {
   position: relative;
   height: 415px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 25px;
 }
@@ -319,7 +322,7 @@ header {
   top: 80px;
 }
 .rating .imgStar {
-  width: 20px;
+  width: 25px;
   margin: 3px;
   height: auto;
 }
@@ -406,6 +409,7 @@ header {
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
+  margin-bottom: 160px;
 }
 @media only screen and (max-width: 1100px) {
   .dropdown-location {
@@ -505,7 +509,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 200px;
 }
 .dropdown-about .dropdown {
   width: 60%;
@@ -576,10 +580,12 @@ header {
   font-family: "montserrat-medium";
   font-size: 18px;
   color: #FF6060;
+  margin-bottom: 120px;
 }
 @media only screen and (max-width: 600px) {
   .error-content .lien-accueil {
     font-size: 14px;
+    margin-bottom: 220px;
   }
 }
 

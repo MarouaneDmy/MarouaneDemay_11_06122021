@@ -15,13 +15,13 @@ export default class Rating extends React.Component {
 
     return (
         <div className="rating">
-            {arrayStars.map((stars) =>
+            {arrayStars.map((stars, index) =>
                 stars === "star" ? (
-                    <div className="star">
+                    <div key={`star_${index}`} className="star">
                         <img className="imgStar" src={star} alt="star" />
                     </div>
                 ) : (
-                    <div className="noStar">
+                    <div key={`star_${index}`} className="noStar">
                         <img className="imgStar" src={noStar} alt="no-star" />
                     </div>
                 )

@@ -9,8 +9,8 @@ export default class Dropdown extends React.Component {
     if (this.props.list) {
       return (
         <ul className="dropdownList">
-          {this.props.list.map((item) => (
-            <li>{item}</li>
+          {this.props.list.map((item, index) => (
+            <li key={`dropdown_${index}`}>{item}</li>
           ))}
         </ul>
       )

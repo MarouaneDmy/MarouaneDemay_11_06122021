@@ -2,13 +2,19 @@ import React from 'react'
 import Carrousel from '../components/carrousel';
 import InfoLocation from '../components/infoLocation';
 import Dropdown from '../components/dropdown';
-import Footer from '../components/footer'
 import getData from '../tools/getData'
+import Error from './error';
 
 export default class Location extends React.Component {
   
   render() {
     let data = getData()
+    if (!data) {
+      return (
+        <Error/>
+      )
+    }
+
     return (
       <>
         <Carrousel location={data}/>
@@ -17,7 +23,6 @@ export default class Location extends React.Component {
             <Dropdown title="Description" text={data.description} />
             <Dropdown title="Équipements" list={data.equipments} />
         </div>
-        <Footer/>
       </>
     )
   }
